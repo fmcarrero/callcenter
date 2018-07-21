@@ -24,31 +24,29 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Dispatcher dispatcher = buildDispatcher();
-
 		ThreadCall taskOne = new ThreadCall( dispatcher, new Call(),calculateTimeThread() );
 		ThreadCall taskTwo = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
 		ThreadCall taskThree = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
 		ThreadCall taskFour = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea5 = new ThreadCall(dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea6 = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea7 = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea8 = new ThreadCall(dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea9 = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea10 = new ThreadCall(dispatcher, new Call(),calculateTimeThread());
-		ThreadCall tarea11 = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
-		
+		ThreadCall taskFive = new ThreadCall(dispatcher, new Call(),calculateTimeThread());
+		ThreadCall taskSix = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
+		ThreadCall taskSeven = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
+		ThreadCall taskEight = new ThreadCall(dispatcher, new Call(),calculateTimeThread());
+		ThreadCall taskNine = new ThreadCall( dispatcher, new Call(),calculateTimeThread());
+		ThreadCall taskTen = new ThreadCall(dispatcher, new Call(),calculateTimeThread());
+		ThreadCall taskEleven = new ThreadCall( dispatcher, new Call(),calculateTimeThread());	
 		
 		taskOne.start();
 		taskTwo.start();
 		taskThree.start();
 		taskFour.start();
-		tarea5.start();
-		tarea6.start();		
-		tarea7.start();
-		tarea8.start();
-		tarea9.start();
-		tarea10.start();
-		tarea11.start();
+		taskFive.start();
+		taskSix.start();		
+		taskSeven.start();
+		taskEight.start();
+		taskNine.start();
+		taskTen.start();
+		taskEleven.start();
 	}
 	public static Dispatcher buildDispatcher() {
 		Dispatcher dispatcher = new Dispatcher();		

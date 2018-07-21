@@ -26,6 +26,10 @@ public class DispatchCallTestzeroCallinHold {
 		this.dispatcher = dispatcher;	
 	}
 	
+	/**
+	 * @author MAURICIO
+	 * Test verifica las peticiones que no quedan peticiones encoladas
+	 */
 	@Test
 	@ThreadCount(ConcurrencyConstant.COUNT_CALLS_CONCURRENT)	
 	public void dispatchCallTestzeroCallinHold() {
