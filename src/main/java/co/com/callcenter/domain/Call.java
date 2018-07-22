@@ -8,9 +8,7 @@ public class Call {
 	
 	private long id;
 	private long duration;	
-	private TypeEmployee responsibleEmployee;
-	
-	
+	private TypeEmployee responsibleEmployee;	
 
 	public long getDuracion() {
 		return duration;

@@ -12,15 +12,7 @@ public abstract class TypeEmployee {
 	
 	private long id;
 	private String name;
-	private String type;	
-
-	public String geType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
+	
 	public long getId() {
 		return id;
 	}

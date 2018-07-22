@@ -10,8 +10,7 @@ package co.com.callcenter.domain;
 public class Director extends TypeEmployee {
 	public Director(String name) {
 		super();
-		this.setName(name);
-		this.setType(this.getClass().getSimpleName());
+		this.setName(name);		
 	}
 
 }
